@@ -1,0 +1,358 @@
+
+
+  :root {
+     --primary: #0d6efd;
+     --dark:#21252f;
+     --body:#888;
+      --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+  }
+
+   body {
+     font-family: 'Press Start 2P';font-size: 22px;
+      line-height: 1.7 ;
+       color: var(--body);
+    
+   }
+  
+      h1,h2,h3,h4,h5,h6 
+ .display-4 {
+     color: var(--dark);
+      font-weight: 700;
+ }    
+
+   a {
+      color: var(--dark);
+       text-decoration: none;
+   }
+    
+    img {
+         width: 100%;
+    }
+
+   .navbar {
+     box-shadow: var(--box-shadow) ;
+   }
+    .logo {
+      width: 90px;
+   } 
+   .navbar .nav-link {
+     font-size: 15px;
+      font-weight: 700;
+      color: white;
+
+   }
+
+  .btn {
+      padding: 14px 18px ;
+       border-width: 2px;
+        border-radius: 0;
+  }
+
+
+
+
+   .hero {
+      background-image: url("IMAGES/bgpulku.png");
+       background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+         z-index: 2;
+   }
+
+   .hero::after {
+   content: "";
+    width: 100%;
+     height: 100%;
+      position: absolute;
+       top: 0;
+        left: 0;
+         background-color: rgba(21, 20, 51, 0.8);
+          z-index: -1;
+   }
+
+   /* ---SERVICES SECTION--- */
+
+    section {
+         padding-top: 120px;
+         padding-top: 120px;
+    }
+
+     .card-effect {
+           box-shadow: var(--box-shadow);
+            background-color: white;
+              padding: 25px;
+               transform: all 0.35s ease ;
+
+     }
+
+     .card-effect:hover {
+         box-shadow:  none;
+          transform: translateY(5px);
+
+     }
+
+     .iconbox {
+         width: 54px ;
+         height: 54px ;
+          display: flex;
+           align-items: center;
+           justify-content: center;
+            background-color: var(--primary) ;
+             color: white;
+              font-size: 32px;
+               border-radius: 100px ;
+                flex: none;
+     }
+
+      .service {
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+
+      }
+
+      .service::after {
+          content: '';
+           width: 100%;
+            height: 100%;
+            position: absolute; 
+             top: -100%;
+              left: 0;
+               background-color: var(--primary);
+                z-index: -1;
+                opacity: 0;
+                transition: all 0.4s ease;
+
+      }
+      
+     
+      .service:hover .iconbox {
+         background-color: #fff;
+          color: var(--primary);
+      }
+
+      
+      .service:hover h5,
+      .service:hover p 
+       {
+         color: #fff ;
+       }
+
+       .service:hover::after {
+          opacity: 1;
+           top:0 ;
+
+       }
+
+          /* ---features--- */
+
+          .col-img {
+            background-image: url("IMAGES/potrait\ 1.jpg");
+            background-position: center;
+             background-size: cover;
+              min-height: 500px;
+               
+            
+          }
+    
+             /* ---PROJECT section---- */ 
+
+          .project {
+             position: relative;
+              overflow: hidden;
+
+          }
+
+          .project .overlay {
+             position: absolute;
+              top: 0;
+               left: 0;
+                width: 100%;
+                 height: 100%;
+                 background-color: rgba(21, 20, 51, 0.8);
+                  padding: 30px;
+                   display: flex;
+                    align-items: flex-end;
+                     transition: all 0.4s ease;
+                     opacity: 0;
+
+          }
+
+           .project img {
+            transition: all 0.4s ease;
+
+           }
+           .project:hover .overlay {
+
+              opacity: 1;
+           }
+
+           .project:hover img {
+       transform: scale(1.1);
+
+           }
+
+           /* -----PRICING--- */
+
+            .pricing i {
+          font-size: 20px;
+           color: var(--primary);
+
+            }
+
+            .pricing ul li {
+             margin-top: 8px;
+
+            }
+
+            /* ----Team Member--- */
+       .team-member img  {
+        width: 125px;
+        height: 125px;
+         border-radius: 100px ;
+
+       }
+  
+       .social-icons {
+         display: flex;
+           justify-content: center;
+       }
+   
+        .social-icons a {
+        width: 34px;
+         height:34px ;
+          background-color: var(--primary);
+           border-radius: 2px solid var(--primary);
+            color: #fff;
+             display: flex;
+              justify-content: center;
+               align-items: center;
+                border-radius: 100px ;
+                     margin-left: 5px;   
+                      transition:  all 0.4s ease;
+                       border: 2px solid var(--primary);
+                    }
+
+                    .social-icons a:hover {
+             color: var(--primary);
+          background: transparent;
+
+           border-color: var(--primary);
+                    }
+
+                    /* ---contact-- */
+                    form input.form-control {
+                  height: 56px;
+
+                    }
+
+                    form .form-control {
+                  border: transparent;
+                  border-radius: 0;
+                   background-color: rgba(0, 0, 0, 0.02);
+
+                    }
+
+                    /* ----footer section--- */
+
+                 .footer-top {
+                 padding: 90px;
+                  padding-bottom: 90px;
+                   background-color: var(--dark);
+
+                 }    
+
+                 .footer-top a {
+                   color: var(--body);
+                    
+                     
+                      
+                 }
+
+                 .footer-top a:hover {
+                   color: #fff;
+                 }
+
+                 .footer-bottom {
+                   background-color: #242933;
+
+                 }
+
+                 @media screen and (max-width: 480px) {
+                   footer lu {
+                      text-align: left;
+                   }
+                }
+                
+        
+
+.navbar-custom {
+  background-color:#58d9c7;
+}
+
+/* .top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: var(--clr-secondary);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  color: var(--clr-white);
+  animation: bounce 2s ease-in-out infinite;
+
+  visibility: hidden;
+  z-index: -100;
+}
+
+.show-link {
+  visibility: visible;
+  z-index: 100;
+} */
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+ .to-top {
+   background-color: #fff;
+   position: fixed;
+   bottom: 16px;
+   right: 32px;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 32px;
+   color: #1f1f1f;
+   text-decoration: none;
+   opacity: 0;
+   pointer-events: none;
+   transition: all .4s;
+    animation: bounce 2s ease-in-out infinite;
+
+ }
+
+ .to-top.active {
+   bottom: 32px;
+   pointer-events: auto;
+   opacity: 1;
+    animation: bounce 2s ease-in-out infinite;
+ }
